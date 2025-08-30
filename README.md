@@ -17,7 +17,7 @@ Our final system is a **Unified Hybrid Model** that uses a tuned LightGBM classi
 | **Hallucination**   | 0.70      | 0.68   | 0.69     |
 | **Not Hallucination** | 0.78      | 0.80   | 0.79     |
 | **Macro Avg**       | **0.74**      | **0.74**   | **0.74**     |
-| **Accuracy**        |                       |{**0.75**}              |
+| **Accuracy**                                 |{**0.75**} |
 
 ---
 
