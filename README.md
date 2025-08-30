@@ -17,7 +17,7 @@ Our final system is a **Unified Hybrid Model** that uses a tuned LightGBM classi
 | **Hallucination**   | 0.70      | 0.68   | 0.69     |
 | **Not Hallucination** | 0.78      | 0.80   | 0.79     |
 | **Macro Avg**       | **0.74**      | **0.74**   | **0.74**     |
-| **Accuracy**                                 |{**0.75**} |
+| **Accuracy**|     |                                |{**0.75**} |
 
 ---
 
@@ -26,6 +26,23 @@ Our final system is a **Unified Hybrid Model** that uses a tuned LightGBM classi
 
 ---
 
+### Step 2: Set Up the Conda Environment
+
+Open your terminal or Anaconda Prompt and run the following commands.
+
+```bash
+# 1. Create a new Conda environment
+conda create -n hallucination_env python=3.9 -y
+
+# 2. Activate the environment
+conda activate hallucination_env
+
+# 3. Install all required libraries from the requirements file
+pip install -r requirements.txt
+
+# 4. Download necessary NLP models for spaCy and NLTK
+python -m spacy download en_core_web_sm
+python -c "import nltk; nltk.download('stopwords')"
 ## How to Reproduce the Final Result (Step-by-Step)
 
 Follow these instructions exactly to set up the environment and run the code.
